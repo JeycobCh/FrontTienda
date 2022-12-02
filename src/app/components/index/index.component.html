@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>PRODUCTOS</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let producto of productos">
+          <div class="card">
+            <img [src]="producto.imagen" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{producto.nombre}}</h5>
+              <h5 class="card-title">{{producto.precio}}</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
