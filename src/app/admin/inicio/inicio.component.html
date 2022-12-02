@@ -1,7 +1,21 @@
 <div class="container  ">
 	<div class="row d-flex justify-content-center">
 		<div class="col-10 text-center pt-12 ">
-			
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+				  <a class="nav-link" [routerLink]="['/admin']">Home</a>
+				</li> 
+				<li class="nav-item">
+				<a class="nav-link active" [routerLink]="['/productos']">Productos</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" [routerLink]="['/formulario']">Crear Producto</a>
+				</li> 
+				
+				<li class="nav-item">
+				<a class="nav-link" [routerLink]="['/index']">Index</a>
+				</li> 
+			  </ul>
 			<!-- fila 1  -->
 			<div class="row">
 				<div class="col-sm-6">
@@ -9,7 +23,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Tus productos</h5>
 							<p class="card-text pb-3">Puedes modificar, eliminar y editar tus productos.</p>
-							<a href="gestionproducto" class="btn btn-primary">Productos</a>
+							<a href="/productos" class="btn btn-primary">Productos</a>
 						</div>
 					</div>
 				</div>

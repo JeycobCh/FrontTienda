@@ -1,5 +1,21 @@
 <div class="container">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin']">Home</a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/productos']">Productos</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/formulario']">Crear Producto</a>
+        </li> 
+        
+        <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/index']">Index</a>
+        </li> 
+      </ul>
     <h2>GUARDAR PRODUCTO</h2>
+       
     <form>
 
 
@@ -12,6 +28,10 @@
             <input type="text" class="form-control" name="precio" [(ngModel)]="producto.precio"> 
         </div>
         <div class="mb-3">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="imagen" [(ngModel)]="producto.imagen" />
+            </form>
             <label for= "imagen" class="form-label">Imagen</label>
             <input type="text" class="form-control" name="imagen" [(ngModel)]="producto.imagen"> 
         </div>

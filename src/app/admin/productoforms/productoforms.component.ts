@@ -38,7 +38,7 @@ export class ProductoformsComponent implements OnInit {
 
   actualizarProducto(){
     this.productoService.actualizarProducto(this.producto)
-        .subscribe(response => this.router.navigate(['']));
+        .subscribe(response => this.router.navigate(['productos']));
   }
 
   compararCategoria(o1: Categoria, o2:Categoria): boolean{

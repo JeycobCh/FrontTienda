@@ -1,13 +1,48 @@
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['']">Productos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['formulario']">Crear Producto</a>
-    </li> 
-    
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['index']">Index</a>
-    </li> 
+<nav style="padding-right: 3em ; height: 50px;" class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
 
-  </ul>
+  <div class="container pt-6">
+    <div class="row justify-content-start">
+      <div class="col-12">
+        <div class="btn-group" >
+          <button style="margin-right: 5em; color: white; font-size: large;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bienvenido  </button>
+          <div class="dropdown-menu dropdown-menu-right" >
+            <button  routerLink="micuenta"  class="dropdown-item" type="button">Mi cuenta</button>
+            <button class="dropdown-item" type="button"><a>Cerrar Sesión</a></button>
+          
+          </div>
+      </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="row col-4 justify-content-center pt-6">
+   
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="tasks" style="color: white; font-size: large;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="login" style="color: white; font-size: large;">Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="registro" style="color: white; font-size: large;">Registro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="miscompras" style="color: white; font-size: large;">Mis compras</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="carritocompras" style="color: white; font-size: large;"><i class="fas fa-shopping-cart"></i> </a>
+  
+      </li>
+      
+    </ul>
+  
+
+  </div>
+  
+</nav>
+ 
+ 
