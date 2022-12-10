@@ -23,15 +23,18 @@
             <label for= "exampleInputEmail1" class="form-label">Nombre</label>
             <input type="text" class="form-control" name="nombre" [(ngModel)]="producto.nombre"> 
         </div>
+
+        <div class="ab-3">
+            <label for= "exampleInputEmail1" class="form-label">Descripcion</label>
+            <input type="text" class="form-control" name="nombre" [(ngModel)]="producto.descripcion"> 
+        </div>
+
         <div class="ab-3">
             <label for= "precio" class="form-label">Precio</label>
             <input type="text" class="form-control" name="precio" [(ngModel)]="producto.precio"> 
         </div>
         <div class="mb-3">
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-                Select image to upload:
-                <input type="file" name="imagen" [(ngModel)]="producto.imagen" />
-            </form>
+      
             <label for= "imagen" class="form-label">Imagen</label>
             <input type="text" class="form-control" name="imagen" [(ngModel)]="producto.imagen"> 
         </div>
@@ -46,7 +49,5 @@
     
         <button type="submit" class="btn btn-primary mt-3" (click)="crearProducto()" *ngIf="!producto.id">Guardar</button>
         <button type="submit" class="btn btn-primary mt-3" (click)="actualizarProducto()" *ngIf="producto.id">Guardar</button>
-
-    
     </form>
 </div>

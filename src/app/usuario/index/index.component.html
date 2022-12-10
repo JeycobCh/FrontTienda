@@ -7,8 +7,8 @@
             <img [src]="producto.imagen" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{producto.nombre}}</h5>
-              <h5 class="card-title">{{producto.precio}}</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">{{producto.precio | currency: 'S/.'}}</h5>
+              <p class="card-text">{{producto.descripcion}}</p>
               <button class = "btn btn-primary mb-3" [routerLink]="['/usuarioproducto']">Ver producto</button>
             </div>
             
